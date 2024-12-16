@@ -1,0 +1,372 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: 'Lexend';
+	src: url('$lib/assets/font/Lexend-ExtraBold.ttf');
+	font-weight: 800;
+	line-height: normal;
+}
+
+@font-face {
+	font-family: 'Gilroy-Bold';
+	src: url('$lib/assets/font/Gilroy-Bold.ttf');
+}
+
+@font-face {
+	font-family: 'Gilroy-Medium';
+	src: url('$lib/assets/font/Gilroy-Medium.ttf');
+}
+
+@font-face {
+	font-family: 'Gilroy-SemiBold';
+	src: url('$lib/assets/font/Gilroy-SemiBold.ttf');
+}
+
+@font-face {
+	font-family: 'Gilroy-Regular';
+	src: url('$lib/assets/font/Gilroy-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Gilroy-SemiBold';
+	src: url('$lib/assets/font/Gilroy-SemiBold.ttf');
+}
+
+@font-face {
+	font-family: 'All-Gender-Bold';
+	src: url('$lib/assets/font/All-Genders-Bold-v4.otf');
+	unicode-range: U+600 –6FF;
+}
+
+@font-face {
+	font-family: 'All-Gender-Medium';
+	src: url('$lib/assets/font/All-Genders-Regular-v4.otf');
+	unicode-range: U+600 –6FF;
+}
+
+@font-face {
+	font-family: 'All-Gender-Regular';
+	src: url('$lib/assets/font/All-Genders-Light-v4.otf');
+	unicode-range: U+600 –6FF;
+}
+
+/* **** */
+
+@font-face {
+	font-family: 'Gilroy-Bold';
+	src: url('$lib/assets/font/Bahij_TheSansArabic-Bold.ttf');
+	unicode-range: U+0600-06FF, U+0750-077F, U+FB50-FDFF, U+FE70-FEFF;
+}
+
+@font-face {
+	font-family: 'Gilroy-Medium';
+	src: url('$lib/assets/font/Bahij_TheSansArabic-SemiBold.ttf');
+	unicode-range: U+0600-06FF, U+0750-077F, U+FB50-FDFF, U+FE70-FEFF;
+}
+
+@font-face {
+	font-family: 'Gilroy-SemiBold';
+	src: url('$lib/assets/font/Bahij_TheSansArabic-SemiBold.ttf');
+	unicode-range: U+0600-06FF, U+0750-077F, U+FB50-FDFF, U+FE70-FEFF;
+}
+
+@font-face {
+	font-family: 'Gilroy-Regular';
+	src: url('$lib/assets/font/Bahij_TheSansArabic-Plain.ttf');
+	unicode-range: U+0600-06FF, U+0750-077F, U+FB50-FDFF, U+FE70-FEFF;
+}
+
+@font-face {
+	font-family: 'Gilroy-SemiBold';
+	src: url('$lib/assets/font/Bahij_TheSansArabic-SemiBold.ttf');
+	unicode-range: U+0600-06FF, U+0750-077F, U+FB50-FDFF, U+FE70-FEFF;
+}
+
+@font-face {
+	font-family: 'All-Gender-Bold';
+	src: url('$lib/assets/font/Bahij_TheSansArabic-Bold.ttf');
+	unicode-range: U+0600-06FF, U+0750-077F, U+FB50-FDFF, U+FE70-FEFF;
+}
+
+@font-face {
+	font-family: 'All-Gender-Medium';
+	src: url('$lib/assets/font/Bahij_TheSansArabic-Plain.ttf');
+	unicode-range: U+0600-06FF, U+0750-077F, U+FB50-FDFF, U+FE70-FEFF;
+}
+
+@font-face {
+	font-family: 'All-Gender-Regular';
+	src: url('$lib/assets/font/Bahij_TheSansArabic-Light.ttf');
+	unicode-range: U+0600-06FF, U+0750-077F, U+FB50-FDFF, U+FE70-FEFF;
+}
+
+::-webkit-scrollbar-track {
+	background: #371641;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #2a0f31;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #bc5ad7;
+	border-radius: 5px;
+}
+
+.fade-in-transition {
+	/* Define your fade-in transition styles using @apply */
+	@apply transition-opacity duration-1000 ease-in-out;
+	opacity: 0;
+}
+
+.fade-in-transition.visible {
+	/* Define your visible state styles using @apply */
+	@apply opacity-100;
+}
+
+body {
+	overflow-y: scroll !important;
+	overflow-x: hidden !important;
+	line-height: normal;
+}
+
+.course-head {
+	border-radius: 10px;
+	background: var(--Accent-2, #200b26);
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 28px;
+	align-items: center;
+	/* margin-top: 31px; */
+	width: 100%;
+}
+
+.course-new-quests {
+	display: grid;
+	grid-template-columns: 67.5% 32.5%;
+	gap: 24px;
+	width: 100%;
+	margin-top: 31px;
+}
+
+.course-image {
+	/* flex: 0 0 57.911%; */
+	width: 100%;
+	aspect-ratio: 1192/491;
+	position: relative;
+	height: 491px;
+}
+
+.course-image iframe {
+	aspect-ratio: 1192/491;
+	border-radius: 6px;
+	width: 100%;
+	object-fit: cover;
+	height: 491px;
+}
+
+.course-content {
+	display: flex;
+	/* max-width: 536px;	 */
+	width: 100%;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 63px;
+}
+
+.course-content-info {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 30px;
+}
+
+.course-content-info-text {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 15px;
+}
+
+.course-content-info-text h4 {
+	color: var(--White, #fff);
+	font-family: Gilroy-Bold;
+	font-size: 42px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.course-content-info-text p {
+	color: var(--white-60, #a99fac);
+	font-family: Gilroy-Medium;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.course-review {
+	display: flex;
+	align-items: flex-start;
+	gap: 20px;
+	font-family: Gilroy-Medium;
+}
+
+.start-quiz-button {
+	display: flex;
+	width: 100%;
+	padding: 16px 32px 15px 32px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	background: var(--Button, linear-gradient(95deg, #f71756 0%, #fdeb56 100%));
+	color: var(--white-10, #3d2644);
+	font-family: Gilroy-SemiBold;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.start-quiz-button:hover {
+	box-shadow: 0px 5px 14px 0px rgba(251, 134, 86, 0.25);
+}
+
+.no-scroll {
+	overflow: hidden !important;
+	height: 100%;
+}
+
+div#unity-container {
+	width: 90%;
+}
+
+@media (max-width: 1440px) {
+	.course-image {
+		width: 100%;
+		height: unset;
+		aspect-ratio: 16/9;
+	}
+
+	.course-image iframe {
+		aspect-ratio: 16/9;
+	}
+}
+
+@media (max-width: 1366px) {
+	.course-head {
+		flex-direction: column;
+	}
+
+	.course-image {
+		width: 100%;
+		height: unset;
+	}
+
+	.course-image iframe {
+		height: unset;
+	}
+
+	.course-content-info {
+		display: flex;
+		/* flex-direction: row; */
+		align-items: flex-start;
+		gap: 30px;
+		width: 100%;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	.course-new-quests {
+		grid-template-columns: 1fr;
+	}
+}
+
+.networking-chat::-webkit-scrollbar-track {
+	background: rgba(253, 235, 86, 0.1);
+}
+
+.networking-chat::-webkit-scrollbar {
+	width: 8px;
+}
+
+.networking-chat::-webkit-scrollbar-thumb:hover {
+	background: #fdeb56;
+}
+
+.networking-chat::-webkit-scrollbar-thumb {
+	background: #fdeb56;
+	border-radius: 100px;
+}
+
+section.picker {
+	background: #2d1933 !important;
+}
+
+.pad-top {
+	background: #2d1933 !important;
+}
+
+.skintone-button-wrapper {
+	background: #2d1933 !important;
+}
+
+emoji-picker {
+	--background: #2d1933;
+	--border-size: 0;
+}
+
+.picker {
+	border-radius: 10px;
+}
+
+.cr-slider-wrap {
+	display: none !important;
+}
+
+.cr-boundary {
+	border-radius: 100%;
+}
+
+.cr-boundary {
+	border: 4px #413047 !important;
+}
+
+.cr-viewport.cr-vp-circle {
+	border: 4px #413047 !important;
+}
+
+.cover-container .cr-boundary {
+	border-radius: 6px;
+	width: 100% !important;
+	height: auto !important;
+	aspect-ratio: 1380/220;
+}
+
+.cover-container .cr-viewport.cr-vp-square {
+	border-radius: 6px;
+	width: 100% !important;
+	height: auto !important;
+	aspect-ratio: 1380/220;
+}
+
+.custom-prose {
+	@apply prose-p:text-white-90 prose-strong:text-white-90 prose-ol:text-white-90 prose-ul:text-white-90 prose-li:text-white-90 prose-headings:text-white-90;
+}
+
+.explorSider .splide__slide {
+	width: fit-content !important;
+}
+
+.explorSider .splide {
+	padding: 0 !important;
+}

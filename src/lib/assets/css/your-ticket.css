@@ -1,0 +1,245 @@
+.your-ticket-container {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 20px;
+}
+
+.your-ticket-container h5 {
+	color: var(--white-90, #e9e6ea);
+	font-family: Gilroy-SemiBold;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.your-ticket {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 40px;
+	width: 100%;
+}
+
+.your-ticket-info {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 20px;
+}
+
+.your-ticket-data {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 20px;
+}
+
+.your-ticket-data img {
+	width: 120px;
+	height: 120px;
+	border-radius: 4px;
+	border: 1px solid var(--white-10, #3d2644);
+	object-fit: cover;
+}
+
+.your-ticket-texts {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 12px;
+}
+
+.your-ticket-subject {
+	color: var(--white-80, #d4cfd6);
+	font-family: Gilroy-SemiBold;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.your-ticket-description {
+	color: var(--white-60, #a99fac);
+	font-family: Gilroy-Medium;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	max-width: 502px;
+}
+
+.your-ticket-data {
+	color: var(--white-30, #68566e);
+	font-family: Gilroy-Medium;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.your-ticket-buttons {
+	display: flex;
+	align-items: flex-start;
+	gap: 20px;
+	width: 100%;
+}
+
+.your-ticket-buttons button {
+	display: flex;
+	width: 100%;
+	padding: 6px 12px;
+	justify-content: center;
+	align-items: center;
+	gap: 12px;
+}
+
+.your-ticket-buttons button p {
+	font-family: Gilroy-SemiBold;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.ticket-close-button {
+	border-radius: 4px;
+	background: rgba(247, 23, 86, 0.1);
+}
+
+.ticket-close-button-closed {
+	background: transparent !important;
+}
+
+.ticket-close-button .close-ticket-hover {
+	display: none;
+}
+
+.ticket-close-button:hover .close-ticket-hover {
+	display: block;
+}
+
+.ticket-close-button:hover .close-ticket-unhover {
+	display: none;
+}
+
+.ticket-close-button:hover {
+	background: var(--Accent, #f71756);
+}
+
+.ticket-close-button p {
+	color: #f71756;
+}
+
+.ticket-close-button-closed p {
+	color: #1fd031 !important;
+}
+
+.ticket-close-button:hover p {
+	color: var(--text-dark, #2a0d32);
+}
+
+.ticket-back-button {
+	background: var(--white-10, #3d2644);
+	border-radius: 4px;
+}
+
+.ticket-back-button p {
+	color: var(--white-90, #e9e6ea);
+}
+
+.ticket-back-button:hover {
+	background: var(--white-20, #533e59);
+}
+
+.close-ticket-container {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 40px;
+}
+
+.close-ticket-texts {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 8px;
+}
+
+.close-ticket-title {
+	color: var(--white-90, #e9e6ea);
+	font-family: Gilroy-SemiBold;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.close-ticket-body {
+	color: var(--white-60, #a99fac);
+	font-family: Gilroy-Medium;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	max-width: 502px;
+}
+
+.close-ticket-container button {
+	padding: 16px;
+	gap: 10px;
+	border-radius: 10px;
+}
+
+.ticket-yes-button {
+	background: rgba(31, 208, 49, 0.1);
+}
+
+.ticket-yes-button p {
+	color: var(--Positive, #1fd031);
+}
+
+.ticket-yes-button:hover {
+	background: var(--Positive, #1fd031);
+}
+
+.ticket-yes-button:hover p {
+	color: var(--text-dark, #2a0d32);
+}
+
+.ticket-yes-button .close-ticket-hover {
+	display: none;
+}
+
+.ticket-yes-button:hover .close-ticket-hover {
+	display: block;
+}
+
+.ticket-yes-button:hover .close-ticket-unhover {
+	display: none;
+}
+
+.yes-solved {
+	padding: 56px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 32px;
+}
+
+.yes-solved p {
+	color: var(--Positive, #1fd031);
+	text-align: center;
+	font-family: Gilroy-SemiBold;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+@media (max-width: 720px) {
+	.your-ticket-buttons {
+		flex-direction: column-reverse;
+	}
+}

@@ -1,0 +1,338 @@
+:root {
+	/* fonts */
+	--font-gilroy-medium: Gilroy-Medium;
+	--font-inherit: inherit;
+	--font-gilroy-semibold: Gilroy-SemiBold;
+	--font-gilroy-bold: Gilroy-Bold;
+
+	/* font sizes */
+	--font-size-base: 1rem;
+	--font-size-xl: 1.25rem;
+	--font-size-9xl: 1.75rem;
+	--font-size-lg: 1.13rem;
+
+	/* Colors */
+	--primary-background: #280e30;
+	--white-60: #a99fac;
+	--white-70: #beb6c0;
+	--white-90: #e9e6ea;
+	--white: #fff;
+	--white-40: #7e6e83;
+	--white-80: #d4cfd6;
+
+	/* Gaps */
+	--gap-11xl: 1.88rem;
+	--gap-base: 1rem;
+	--gap-xl: 1.25rem;
+	--gap-3xs: 0.63rem;
+
+	/* Paddings */
+	--padding-2xl: 1.31rem;
+}
+
+.ppiconlylightarrow-left {
+	position: relative;
+	width: 1.5rem;
+	height: 1.5rem;
+}
+.ppexplore {
+	position: relative;
+}
+.ppiconlylightarrow-left-parent {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	gap: var(--gap-3xs);
+}
+.ppiconlylightarrow-right-2 {
+	position: relative;
+	width: 1rem;
+	height: 1rem;
+}
+.ppframe-group,
+.ppiconlylightarrow-right-2-parent {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	gap: var(--gap-3xs);
+	color: var(--white-40);
+}
+.ppframe-group {
+	text-decoration: none;
+	width: 16rem;
+	height: 1.5rem;
+	gap: var(--gap-xl);
+	font-size: var(--font-size-lg);
+	color: var(--white-80);
+	cursor: pointer;
+}
+.ppprivacy-policy1 {
+	margin: 0;
+	width: 100%;
+	position: relative;
+	font-size: inherit;
+	font-weight: 400;
+	font-family: inherit;
+	display: inline-block;
+	min-width: 21.44rem;
+	max-width: 116.25rem;
+}
+.ppyalgamers-we-our {
+	display: block;
+}
+.ppyalgamers-we-our-container {
+	margin: 0;
+	width: 100%;
+	position: relative;
+	font-size: var(--font-size-base);
+	line-height: 1.5rem;
+	font-family: var(--font-gilroy-medium);
+	color: var(--white-70);
+	display: inline-block;
+	min-width: 21.44rem;
+	max-width: 116.25rem;
+}
+.ppprivacy-policy-parent {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	gap: var(--gap-base);
+	min-width: 21.44rem;
+	max-width: 116.25rem;
+	font-size: 2.63rem;
+	color: var(--white);
+	font-family: var(--font-gilroy-bold);
+}
+.ppdefinitions-and-key,
+.ppto-help-explain {
+	margin: 0;
+	width: 100%;
+	position: relative;
+	font-weight: 400;
+	font-family: inherit;
+	display: inline-block;
+	min-width: 21.44rem;
+	max-width: 116.25rem;
+}
+.ppdefinitions-and-key {
+	font-size: inherit;
+	height: 1.94rem;
+	flex-shrink: 0;
+}
+.ppto-help-explain {
+	font-size: var(--font-size-xl);
+	line-height: 1.75rem;
+	color: var(--white-70);
+}
+.ppdefinitions-and-key-terms-parent {
+	align-self: stretch;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	gap: var(--gap-base);
+}
+.ppcookie-small-amount {
+	margin-bottom: false;
+}
+.ppcookie-small-amount-of-data-g {
+	margin: 0;
+	padding-left: var(--padding-2xl);
+	list-style: disc;
+	color: var(--white-60, #a99fac);
+	font-family: Gilroy-Medium;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 28px; /* 175% */
+}
+.ppcookie-small-amount-container {
+	align-self: stretch;
+	position: relative;
+	font-size: var(--font-inherit);
+	line-height: 1.75rem;
+	font-family: var(--font-inherit);
+	color: var(--white-60);
+}
+.ppframe-container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	gap: var(--gap-xl);
+	min-width: 21.44rem;
+	max-width: 116.25rem;
+}
+.ppwe-collect-information,
+.ppwhat-information-do {
+	width: 100%;
+	position: relative;
+	display: inline-block;
+	min-width: 21.44rem;
+	max-width: 116.25rem;
+}
+.ppwhat-information-do {
+	height: 1.94rem;
+	flex-shrink: 0;
+}
+.ppwe-collect-information {
+	font-size: var(--font-size-xl);
+	line-height: 1.75rem;
+	color: var(--white-70);
+}
+.ppname-username-container {
+	font-size: var(--font-inherit);
+	line-height: 1.75rem;
+	font-family: var(--font-inherit);
+	color: var(--white-60);
+}
+.ppname-username-container,
+.ppwe-receive-some,
+.ppwhen-does-yalgamers {
+	width: 100%;
+	position: relative;
+	display: inline-block;
+	min-width: 21.44rem;
+	max-width: 116.25rem;
+}
+.ppwhen-does-yalgamers {
+	font-size: var(--font-size-9xl);
+	font-family: var(--font-gilroy-semibold);
+	color: var(--white-90);
+}
+.ppwe-receive-some {
+	line-height: 1.5rem;
+}
+.ppwhen-does-yalgamers-use-custom-parent {
+	align-self: stretch;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	gap: var(--gap-base);
+	font-size: var(--font-size-base);
+	color: var(--white-70);
+	font-family: var(--font-gilroy-medium);
+}
+.ppdo-we-share {
+	align-self: stretch;
+	position: relative;
+}
+.ppwe-may-share {
+	margin: 0;
+}
+.ppwe-may-share-container {
+	align-self: stretch;
+	position: relative;
+	font-size: var(--font-size-base);
+	line-height: 1.5rem;
+	font-family: var(--font-gilroy-medium);
+	color: var(--white-70);
+}
+.ppdo-we-share-the-information-we-group,
+.ppdo-we-share-the-information-we-parent {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	gap: var(--gap-11xl);
+	min-width: 21.44rem;
+	max-width: 116.25rem;
+}
+.ppdo-we-share-the-information-we-group {
+	gap: var(--gap-base);
+}
+.ppwhere-and-when {
+	width: 100%;
+	position: relative;
+	display: inline-block;
+	min-width: 21.44rem;
+	max-width: 116.25rem;
+}
+.ppby-submitting-your,
+.ppwe-implement-a {
+	font-size: var(--font-size-base);
+	line-height: 1.5rem;
+	font-family: var(--font-gilroy-medium);
+	color: var(--white-70);
+}
+.ppby-submitting-your {
+	width: 100%;
+	position: relative;
+	display: inline-block;
+	min-width: 21.44rem;
+	max-width: 116.25rem;
+}
+.ppwe-implement-a {
+	flex: 1;
+}
+.ppaffiliates,
+.ppcould-my-information,
+.ppis-the-information,
+.ppwe-implement-a {
+	width: 100%;
+	position: relative;
+	display: inline-block;
+	min-width: 21.44rem;
+	max-width: 116.25rem;
+}
+.ppcould-my-information {
+	flex: 1;
+}
+.ppaffiliates,
+.is-the-information {
+	height: 2.13rem;
+	flex-shrink: 0;
+}
+.ppaffiliates {
+	height: 2.56rem;
+}
+.ppdont-hesitate-to {
+	align-self: stretch;
+	position: relative;
+	font-size: var(--font-size-xl);
+	line-height: 1.75rem;
+	color: var(--white-70);
+}
+.ppframe-parent,
+.ppprivacy-poliicy,
+.ppprivacy-poliicy-parent {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+.ppframe-parent {
+	align-self: stretch;
+	flex: 1;
+	flex-direction: column;
+	gap: 2.5rem;
+	min-width: 21.44rem;
+	max-width: 116.25rem;
+}
+.ppprivacy-poliicy,
+.ppprivacy-poliicy-parent {
+	overflow: hidden;
+	flex-direction: row;
+}
+.ppprivacy-poliicy {
+	flex: 1;
+	padding: 1.88rem;
+	box-sizing: border-box;
+	min-width: 23.44rem;
+	max-width: 120rem;
+}
+.ppprivacy-poliicy-parent {
+	position: relative;
+	background-color: var(--primary-background);
+	width: 100%;
+	text-align: left;
+	font-size: var(--font-size-9xl);
+	color: var(--white-90);
+	font-family: var(--font-gilroy-semibold);
+}

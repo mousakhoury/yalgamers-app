@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+	<link rel="manifest" href="/site.webmanifest" />
+	<meta charset="utf-8" />
+	<link rel="icon" href="/src/lib/assets/logo.png" />
+	<meta name="viewport" content="width=device-width" />
+
+	<!-- <meta property="og:url" content="https://development.yalgamers.gg/" />
+	<meta property="og:type" content="Website" />
+	<meta property="og:title" content="Yalgamers" />
+	<meta property="og:description" content="Yalgamer is great platform for gamers." />
+	<meta property="og:image"
+		content="https://fastly.picsum.photos/id/256/1200/630.jpg?hmac=6-SQmUqIECHQ4QadM7mAYY3sHPH5r_8e2pCBs7V67Sc" />
+	<meta property="og:image:alt" content="Preview of Yalgamer Steam Score" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:url" content="https://yalgamers.gg/gamer-score" />
+	<meta name="twitter:title" content="Yalgamer Steam Score" />
+	<meta name="twitter:description" content="I scanned my steam account on Yalgamers. See! what score I got!! 🙌😎" />
+	<meta name="twitter:image"
+		content="https://fastly.picsum.photos/id/256/1200/630.jpg?hmac=6-SQmUqIECHQ4QadM7mAYY3sHPH5r_8e2pCBs7V67Sc" />
+	<meta name="twitter:image:alt" content="Preview of Yalgamer Steam Score" />
+	<meta name="twitter:site" content="@yalgamers_gg" /> -->
+
+	<!-- <script>
+		(function (w, d, s, l, i) {
+			w[l] = w[l] || [];
+			w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+			var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s),
+				dl = l != 'dataLayer' ? '&l=' + l : '';
+			j.async = true;
+			j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+			f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-N6Q54MBG');
+	</script> -->
+	<!-- <script async src="https://umami.algata.in/script.js" data-website-id="40fc8508-fa88-4aa1-b8ab-28997ef4b520"
+		data-domains="yalgamers.gg" data-cache="true" data-do-not-track="true"></script> -->
+	%sveltekit.head%
+</head>
+
+<body data-sveltekit-preload-data="hover" data-sveltekit-preload-code="viewport">
+	<!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM->N6Q54MBG" height="0" width="0"
+			style="display: none; visibility: hidden"></iframe></noscript> -->
+	<!-- Google tag (gtag.js) -->
+	<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-KMS433Z5MH"></script> -->
+	<!-- <script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'G-KMS433Z5MH');
+	</script> -->
+	<div style="display: contents">%sveltekit.body%</div>
+</body>
+
+<script>
+	if (global === undefined) {
+		var global = window;
+	}
+	// Wait for the iframe to fully load
+	window.onload = function () {
+		var iframe = document.querySelector('#gameiframe'); // Select the iframe by tag, or use a more specific selector if necessary
+		if (iframe) {
+			var iframeDocument = iframe.contentDocument || iframe.contentWindow.document; // Get the document inside the iframe
+
+			// Now, you can access elements inside the iframe document
+			var unityContainer = document.querySelector('#unity-container');
+
+			var unityCanvas = document.querySelector('#unity-canvas');
+
+			console.log(unityContainer);
+
+			// You can now manipulate the unityContainer as needed, for example:
+			unityContainer.style.width = '65%';
+			unityCanvas.style.width = '100%';
+			unityCanvas.style.height = 'auto';
+			unityCanvas.style.aspectRatio = '16 / 9';
+		}
+	};
+</script>
+
+</html>

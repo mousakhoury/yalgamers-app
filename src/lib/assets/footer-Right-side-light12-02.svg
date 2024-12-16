@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 88 19">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#radial-gradient-2);
+        fill-opacity: .6;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: url(#radial-gradient-5);
+      }
+
+      .cls-3 {
+        fill: url(#radial-gradient);
+        fill-opacity: .5;
+      }
+
+      .cls-4 {
+        fill: url(#radial-gradient-3);
+      }
+
+      .cls-5 {
+        fill: url(#radial-gradient-4);
+        fill-opacity: .7;
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="-1052.39" cy="1218.29" fx="-1052.39" fy="1218.29" r="1" gradientTransform="translate(53648.55 -9988.22) rotate(-90) scale(9.5 -44)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fdeb56"/>
+      <stop offset="1" stop-color="#fdeb56" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-2" cx="-1147.16" cy="1213.49" fx="-1147.16" fy="1213.49" r="1" gradientTransform="translate(34021.83 -6873.95) rotate(-90) scale(6 -28)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fdeb56" stop-opacity=".68"/>
+      <stop offset="1" stop-color="#fdeb56" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-3" cx="-1507.27" cy="1195.93" fx="-1507.27" fy="1195.93" r="1" gradientTransform="translate(14395.11 -3758.67) rotate(-90) scale(2.5 -12)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fdeb56" stop-opacity=".81"/>
+      <stop offset="1" stop-color="#fdeb56" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-4" cx="-1330.89" cy="1204.97" fx="-1330.89" fy="1204.97" r="1" gradientTransform="translate(20528.46 -4648.61) rotate(-90) scale(3.5 -17)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fdeb56" stop-opacity=".81"/>
+      <stop offset="1" stop-color="#fdeb56" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-5" cx="-1507.27" cy="1189.78" fx="-1507.27" fy="1189.78" r="1" gradientTransform="translate(11941.77 -3758.67) rotate(-90) scale(2.5 -10)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fdeb56"/>
+      <stop offset="1" stop-color="#fdeb56" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <ellipse class="cls-3" cx="44" cy="9.5" rx="44" ry="9.5"/>
+  <ellipse class="cls-1" cx="44" cy="9" rx="28" ry="6"/>
+  <ellipse class="cls-4" cx="44" cy="9.5" rx="12" ry="2.5"/>
+  <ellipse class="cls-5" cx="44" cy="9.5" rx="17" ry="3.5"/>
+  <ellipse class="cls-2" cx="44" cy="9.5" rx="10" ry="2.5"/>
+</svg>
