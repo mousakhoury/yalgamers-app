@@ -1,38 +1,63 @@
-# create-svelte
+# SvelteKit Project
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Welcome to the SvelteKit Project! Follow the instructions below to get started with the project.
 
-## Creating a project
+## Prerequisites
 
-If you're seeing this, you've probably already done this step. Congrats!
+Make sure you have the following installed on your system:
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+- [Node.js](https://nodejs.org/) (v16 or higher recommended)
+- [pnpm](https://pnpm.io/) (Package manager)
+- [Redis](https://redis.io/) (for the Redis server)
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+## Setup Instructions
 
-## Developing
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd <repository-folder>
+   ```
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+2. **Install dependencies**
+   ```bash
+   pnpm install
+   ```
 
-```bash
-npm run dev
+3. **Configure environment variables**
+   Rename `.env.example` to `.env`:
+   ```bash
+   mv .env.example .env
+   ```
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+4. **Start the Redis server**
+   Open a new terminal tab and run the following command:
+   ```bash
+   redis-server --port 6380
+   ```
 
-## Building
+5. **Run the development server**
+   Start the SvelteKit development server:
+   ```bash
+   npm run dev
+   ```
 
-To create a production version of your app:
+6. **Access the application**
+   Open your browser and navigate to `http://localhost:5173` (or the port specified in your `.env` file).
 
-```bash
-npm run build
-```
+## Notes
 
-You can preview the production build with `npm run preview`.
+- Ensure that the Redis server is running on the specified port (`6380`) before starting the development server.
+- For further configurations, update the `.env` file as needed.
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+## Scripts
+
+- `pnpm install`: Installs all dependencies.
+- `npm run dev`: Starts the development server.
+
+## Contributing
+
+Feel free to fork the repository and make changes. Pull requests are welcome!
+
+---
+
+Happy coding!
